@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Carousel
+        className="fullscreen-carousel"
+        useKeyboardArrows
+        verticalSwipe="natural"
+        showThumbs={false}
+        showStatus={false}
+        infiniteLoop
+        showArrows={false}
+        showIndicators
+        emulateTouch
+        autoPlay
+        transitionTime={500}
+      >
+        <div style={{ height: '100vh', border: '1px solid red' }}>Leslie fiesta de cumpleaños</div>
+        <div style={{ height: '100vh', border: '1px solid red' }}>Leslie fiesta de cumpleaños</div>
+        <div style={{ height: '100vh', border: '1px solid red' }}>Leslie fiesta de cumpleaños</div>
+      </Carousel>
     </div>
   );
 }
