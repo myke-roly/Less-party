@@ -43,7 +43,7 @@ export const Detail = () => {
 
         <button className="bg-[#BFA880] text-[#ffffff] rounded-md py-5 w-full lg:w-96 mt-5 hover:scale-105 transition-all duration-200 ease-in-out">
           <a
-            href="https://api.whatsapp.com/send?phone=5491121773591&text=Hola Les! confirmo mi asistencia. Soy: *"
+            href="https://api.whatsapp.com/send?phone=5491125019374&text=Hola Les! confirmo mi asistencia. Soy: *"
             className="flex items-center text-lg justify-center gap-5"
           >
             Confirmar asistencia <FaArrowCircleRight color="#ffffff" />
