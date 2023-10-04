@@ -54,7 +54,7 @@ function App() {
         infiniteLoop
         showArrows={true}
         showIndicators
-        autoPlay
+        autoPlay={false}
         transitionTime={800}
       >
         <Main />

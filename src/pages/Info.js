@@ -8,8 +8,8 @@ export const Info = () => {
         <img src="./images/hojas.svg" alt="hojas" />
       </picture>
 
-      <div className="w-full bg-[url('../public/images/lineas.svg')] bg-no-repeat bg-top bg-cover flex self-center items-center justify-center">
-        <div className="p-5 md:p-10 pt-8 md:pt-14 rounded-full shadow-lg w-20 h-20 md:w-40 md:h-40 bg-[#ffffff] flex items-center justify-center my-10">
+      <div className="w-full bg-[url('../public/images/lineas.svg')] bg-no-repeat bg-top bg-cover flex self-center items-center justify-center scale-x-[-1]">
+        <div className="p-5 md:p-10 pt-8 md:pt-14 rounded-full shadow-lg w-20 h-20 md:w-40 md:h-40 bg-[#ffffff] flex items-center justify-center my-10 scale-x-[-1]" >
           <GiPartyPopper size={70} color="#81948B" className="animate-bounce" />
         </div>
       </div>
@@ -38,7 +38,7 @@ export const Info = () => {
 
           <div className="md:mt-14 px-4">
             <p className="text-[#C6D7CF]">
-              Con la bendición de Dios y la presencia de mis padres
+              Con la bendición de Dios y de mis padres
               <br />
               <p className="text-xl md:text-2xl text-[#81948B] my-3 md:my-5">
                 Norma Challapa <br />y<br />
