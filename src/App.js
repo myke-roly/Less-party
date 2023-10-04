@@ -7,6 +7,7 @@ import { FaMusic } from 'react-icons/fa'
 import { Info } from './pages/Info';
 import { Detail } from './pages/Detail';
 import YouTube from 'react-youtube';
+import { Notes } from './pages/Notes';
 
 function App() {
   const [player, setPlayer] = useState(null);
@@ -41,7 +42,7 @@ function App() {
 
   return (
     <div>
-      <button onClick={togglePlay} className='absolute top-5 left-8 p-5 z-10 bg-[#81938A88] rounded-full'>
+      <button onClick={togglePlay} className='absolute top-10 left-5 lg:left-10 p-5 z-10 bg-[#81938A88] rounded-full'>
         <FaMusic className={isPlaying ? 'animate-spin' : ''} size={18} color='#ffffff' />
       </button>
       <YouTube className='hidden' videoId={videoId} opts={opts} onReady={onReady} />
@@ -51,15 +52,15 @@ function App() {
         verticalSwipe="natural"
         showThumbs={false}
         showStatus={false}
-        infiniteLoop
         showArrows={true}
         showIndicators
-        autoPlay={false}
+        autoPlay
         transitionTime={800}
       >
         <Main />
         <Info />
         <Detail />
+        <Notes />
       </Carousel>
     </div>
   );
