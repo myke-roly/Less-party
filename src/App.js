@@ -12,7 +12,7 @@ import { Notes } from './pages/Notes';
 function App() {
   const [player, setPlayer] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const videoId = 'DzYp5uqixz0'; // Reemplaza con el ID del video de YouTube
+  const videoId = 'E4w_5bY0tBY'; // Reemplaza con el ID del video de YouTube
   const playerRef = useRef(null);
 
   const opts = {

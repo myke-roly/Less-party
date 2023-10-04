@@ -21,12 +21,6 @@ export const Detail = () => {
           <h2 className="text-[#81948B] text-5xl lg:text-8xl font-Cookie">Fiesta</h2>
         </div>
 
-        <PrimaryButton
-          title="Confirmar asistencia"
-          iconRight={() => <FaArrowCircleRight color="#ffffff" />}
-          link="https://api.whatsapp.com/send?phone=5491125019374&text=Hola Les! confirmo mi asistencia. Soy: *"
-        />
-
         <div className="my-5 lg:my-10 lg:flex justify-center items-center">
           <div className="lg:w-1/3">
             <p className="text-[#C6D7CF] text-2xl lg:text-3xl">Día</p>
@@ -47,6 +41,12 @@ export const Detail = () => {
           </div>
         </div>
       </div>
+
+      <PrimaryButton
+        title="Confirmar asistencia"
+        iconRight={() => <FaArrowCircleRight color="#ffffff" />}
+        link="https://api.whatsapp.com/send?phone=5491125019374&text=Hola Les! confirmo mi asistencia. Soy: *"
+      />
     </div>
   );
 };
