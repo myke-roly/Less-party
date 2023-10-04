@@ -12,8 +12,7 @@ export const Main = () => {
 
         <div className=''>
           <h1 className="text-9xl text-[#81938A] font-Cookie">Leslie</h1>
-          <h2 className="text-5xl my-8 text-[#BFA880] font-Cookie">Mis 16 años</h2>
-          {/* <h2 className="text-4xl my-8 text-[#BFA880]">Fiesta de cumple 16!</h2> */}
+          <h2 className="text-5xl my-8 text-[#BFA880] font-Cookie">Mis dulce 16!</h2>
         </div>
 
         <div className="w-2/3 lg:w-1/3 h-0.5 bg-[#BFA880] mx-auto my-10"></div>
@@ -41,7 +40,7 @@ export const Main = () => {
           <p className="text-center text-[#BFA880] text-1xl">Faltan:</p>
           <ul className="flex justify-evenly items-center gap-5 my-4">
             <li className="text-[#868686] text-3xl lg:text-4xl">
-              20 <p className="text-sm">días</p>
+              24 <p className="text-sm">días</p>
             </li>
             {/* <li className="text-[#868686] text-2xl lg:text-3xl">
               20 <p className="text-xs">dias</p>
