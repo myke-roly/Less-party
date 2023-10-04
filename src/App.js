@@ -41,7 +41,7 @@ function App() {
 
   return (
     <div>
-      <button onClick={togglePlay} className='absolute md:bottom-auto md:top-5 bottom-0 left-8 p-5 z-10 bg-[#81938A88] rounded-full'>
+      <button onClick={togglePlay} className='absolute top-5 left-8 p-5 z-10 bg-[#81938A88] rounded-full'>
         <FaMusic className={isPlaying ? 'animate-spin' : ''} size={18} color='#ffffff' />
       </button>
       <YouTube className='hidden' videoId={videoId} opts={opts} onReady={onReady} />
