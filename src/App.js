@@ -27,11 +27,10 @@ function App() {
         showThumbs={false}
         showStatus={false}
         infiniteLoop
-        showArrows={false}
+        showArrows={true}
         showIndicators
-        emulateTouch
         autoPlay
-        transitionTime={1000}
+        transitionTime={800}
       >
         <Main />
         <Info />
