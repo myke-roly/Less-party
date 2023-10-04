@@ -22,7 +22,7 @@ export const Detail = () => {
         <div className="my-5 lg:my-10 lg:flex justify-center items-center">
           <div className="lg:w-1/3">
             <p className="text-[#C6D7CF] text-2xl lg:text-3xl">Día</p>
-            <p className="text-[#81948B] text-xl lg:text-1xl lg:my-5 mb-5">Sábado 23 de Octubre - 20hs</p>
+            <p className="text-[#81948B] text-xl lg:text-1xl lg:my-5 mb-5">Sábado 28 de Octubre - 20hs</p>
             <button onClick={handleOpenCalendarClick} className='w-full lg:w-80 text-[#BFA880] border-[#BFA880] rounded-md border py-2 bg-[#ffffff]'>Agendar</button>
           </div>
 

@@ -26,12 +26,12 @@ function App() {
         verticalSwipe="natural"
         showThumbs={false}
         showStatus={false}
-        infiniteLoop={false}
+        infiniteLoop
         showArrows={false}
         showIndicators
         emulateTouch
-        autoPlay={false}
-        transitionTime={500}
+        autoPlay
+        transitionTime={1000}
       >
         <Main />
         <Info />

@@ -6,7 +6,7 @@ export const Main = () => {
       <div className="lg:w-3/5 lg:self-center mt-16 lg:mt-0">
         <div className="flex justify-center items-center mb-5">
           <div className="w-10 lg:w-20 h-0.5 bg-[#BFA880]"></div>
-          <p className="mx-5 text-2xl text-[#81938A]">23.10.2023</p>
+          <p className="mx-5 text-2xl text-[#81938A]">28.10.2023</p>
           <div className="w-10 lg:w-20 h-0.5 bg-[#BFA880]"></div>
         </div>
 
