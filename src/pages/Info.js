@@ -41,11 +41,11 @@ export const Info = () => {
               Con la bendición de Dios y de mis padres
               <br />
               <p className="text-xl md:text-2xl text-[#81948B] my-10 md:mt-10">
-                Norma Challapa
+                Christian Vincenti
                 <br />
                 <span className='text-md text-[#BFA880]'>y</span>
                 <br />
-                Christian Vincenti
+                Norma Challapa
               </p>
             </p>
           </div>

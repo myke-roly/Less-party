@@ -29,6 +29,7 @@ export function Counter() {
     }, 1000);
 
     return () => clearInterval(intervalo);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

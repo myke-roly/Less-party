@@ -3,8 +3,8 @@ import { Counter } from '../components/Counter';
 
 export const Main = () => {
   return (
-    <div className="h-screen flex lg:px-0 px-5">
-      <div className="hidden lg:block w-2/5 lg:w-3/5 sm:w-4/5 bg-black">
+    <div className="h-screen flex lg:px-0 px-5 lg:pt-0 pt-40">
+      <div className="hidden lg:block w-2/5 lg:w-3/5 sm:w-4/5">
         <picture className="">
           <img src="./images/fondo1.png" className="w-full h-full object-cover" alt="profile" />
         </picture>
@@ -21,7 +21,7 @@ export const Main = () => {
         </div>
       </div>
 
-      <div className="lg:w-3/5 w-full lg:self-center mt-16 lg:mt-0">
+      <div className="lg:w-3/5 w-full lg:self-center">
         <div className="flex justify-center items-center mb-5">
           <div className="w-10 lg:w-20 h-0.5 bg-[#BFA880]"></div>
           <p className="mx-5 text-2xl text-[#81938A]">28.10.2023</p>
@@ -30,10 +30,10 @@ export const Main = () => {
 
         <div className=''>
           <h1 className="text-9xl text-[#81938A] font-Cookie">Leslie</h1>
-          <h2 className="text-5xl my-8 text-[#BFA880] font-Cookie">Mis dulce 16!</h2>
+          <h2 className="text-5xl lg:my-8 text-[#BFA880] font-Cookie">Mis dulce 16!</h2>
         </div>
 
-        <div className="w-2/3 lg:w-1/3 h-0.5 bg-[#BFA880] mx-auto my-10"></div>
+        <div className="w-2/3 lg:w-1/3 h-0.5 bg-[#BFA880] mx-auto my-5 lg:my-10"></div>
 
         <div className="flex justify-center">
           <FaQuoteLeft color="#BFA880" />
@@ -42,6 +42,12 @@ export const Main = () => {
           </p>
           <FaQuoteRight color='#BFA880' />
         </div>
+      </div>
+
+      <div className="absolute lg:hidden w-full top-0 h-52 left-0 -z-10">
+        <picture className="">
+          <img src="./images/fondo-top.jpeg" className="w-full h-full lg:object-cover object-cover opacity-70" alt="profile" />
+        </picture>
       </div>
     </div>
   );
