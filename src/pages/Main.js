@@ -3,7 +3,7 @@ import { Counter } from '../components/Counter';
 
 export const Main = () => {
   return (
-    <div className="h-screen flex lg:px-0 px-5 lg:pt-0 pt-40">
+    <div className="h-screen flex lg:px-0 px-5 lg:pt-0 pt-44">
       <div className="hidden lg:block w-2/5 lg:w-3/5 sm:w-4/5">
         <picture className="">
           <img src="./images/fondo1.png" className="w-full h-full object-cover" alt="profile" />
@@ -44,9 +44,9 @@ export const Main = () => {
         </div>
       </div>
 
-      <div className="absolute lg:hidden w-full top-0 h-52 left-0 -z-10">
+      <div className="absolute lg:hidden w-full top-0 h-48 sm:h-96 left-0 bottom-0 -z-10">
         <picture className="">
-          <img src="./images/fondo-top.jpeg" className="w-full h-full lg:object-cover object-cover opacity-70" alt="profile" />
+          <img src="./fondo-top-2.png" className="w-full h-full object-bottom object-cover" alt="profile" />
         </picture>
       </div>
     </div>

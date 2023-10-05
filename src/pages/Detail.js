@@ -25,10 +25,10 @@ export const Detail = () => {
           <div className="lg:w-1/3">
             <p className="text-[#C6D7CF] text-2xl lg:text-3xl">Día</p>
             <p className="text-[#81948B] text-xl lg:text-1xl lg:my-5 mb-5">Sábado 28 de Octubre - 21hs</p>
-            <SecondaryButton title="Agendar" onClick={handleOpenCalendarClick} />
+            {/* <SecondaryButton title="Agendar" onClick={handleOpenCalendarClick} /> */}
           </div>
 
-          <div className="m-auto w-40 h-0.5 lg:w-0.5 lg:h-60 bg-[#BFA880] my-8 lg:mx-20"></div>
+          <div className="m-auto w-40 h-0.5 lg:w-0.5 lg:h-60 bg-[#BFA880] my-8 lg:mx-20 opacity-50"></div>
 
           <div className="lg:w-1/3">
             <p className="text-[#C6D7CF] text-2xl lg:text-3xl">Lugar</p>
@@ -40,13 +40,15 @@ export const Detail = () => {
             />
           </div>
         </div>
-      </div>
 
-      <PrimaryButton
-        title="Confirmar asistencia"
-        iconRight={() => <FaArrowCircleRight color="#ffffff" />}
-        link="https://api.whatsapp.com/send?phone=5491125019374&text=Hola Les! confirmo mi asistencia. Soy: *"
-      />
+        <div className="m-auto w-40 h-0.5 lg:w-0.5 lg:h-60 bg-[#BFA880] my-8 lg:mx-20 opacity-50"></div>
+
+        <PrimaryButton
+          title="Confirmar asistencia"
+          iconRight={() => <FaArrowCircleRight color="#ffffff" />}
+          link="https://api.whatsapp.com/send?phone=5491125019374&text=Hola Les! confirmo mi asistencia. Soy: *"
+        />
+      </div>
     </div>
   );
 };
