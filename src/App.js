@@ -3,7 +3,7 @@ import './App.css';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Main } from './pages/Main';
-import { FaMusic } from 'react-icons/fa'
+import { FaMusic } from 'react-icons/fa';
 import { Info } from './pages/Info';
 import { Detail } from './pages/Detail';
 import YouTube from 'react-youtube';
@@ -42,10 +42,10 @@ function App() {
 
   return (
     <div>
-      <button onClick={togglePlay} className='absolute top-5 right-5 lg:right-10 p-4 z-10 bg-[#81938a52] rounded-full'>
-        <FaMusic className={isPlaying ? 'animate-spin' : ''} size={20} color='#ffffff' />
+      <button onClick={togglePlay} className="absolute top-5 right-5 lg:right-10 p-4 z-10 bg-[#81938a52] rounded-full">
+        <FaMusic className={isPlaying ? 'animate-spin' : ''} size={20} color="#ffffff" />
       </button>
-      <YouTube className='hidden' videoId={videoId} opts={opts} onReady={onReady} />
+      <YouTube className="hidden" videoId={videoId} opts={opts} onReady={onReady} />
       <Carousel
         className="fullscreen-carousel bg-[#F9F7F2]"
         useKeyboardArrows
@@ -62,6 +62,14 @@ function App() {
         <Detail />
         <Notes />
       </Carousel>
+      <div className="absolute z-50 bottom-0 right-0 p-4">
+        <span className="text-xs text-[#BFA880]">
+          Created by {' '}
+          <a href="https://myke-dev.vercel.app/" target="_blank" rel="noreferrer" className="text-xs underline text-[#81938a]">
+            @Mike
+          </a>
+        </span>
+      </div>
     </div>
   );
 }
