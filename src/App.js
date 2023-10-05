@@ -10,7 +10,7 @@ import YouTube from 'react-youtube';
 import { Notes } from './pages/Notes';
 
 function App() {
-  const [player, setPlayer] = useState(null);
+  const [, setPlayer] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const videoId = 'E4w_5bY0tBY'; // Reemplaza con el ID del video de YouTube
   const playerRef = useRef(null);
