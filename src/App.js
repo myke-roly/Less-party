@@ -54,7 +54,7 @@ function App() {
         showStatus={false}
         showArrows={true}
         showIndicators
-        autoPlay={false}
+        autoPlay
         transitionTime={800}
       >
         <Main />
