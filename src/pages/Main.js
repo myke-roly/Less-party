@@ -1,5 +1,6 @@
 import { FaQuoteLeft, FaQuoteRight, FaHeart } from 'react-icons/fa';
 import { Counter } from '../components/Counter';
+import { Divider } from '../components/Divider';
 
 export const Main = () => {
   return (
@@ -33,7 +34,7 @@ export const Main = () => {
           <h2 className="text-5xl lg:my-8 text-[#BFA880] font-Cookie">Mis dulce 16!</h2>
         </div>
 
-        <div className="w-2/3 lg:w-1/3 h-0.5 bg-[#BFA880] mx-auto my-5 lg:my-10"></div>
+        <Divider />
 
         <div className="flex justify-center">
           <FaQuoteLeft color="#BFA880" />

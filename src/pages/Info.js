@@ -1,5 +1,6 @@
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 import { GiPartyPopper } from 'react-icons/gi';
+import { Divider } from '../components/Divider';
 
 export const Info = () => {
   return (
@@ -34,7 +35,7 @@ export const Info = () => {
             </p>
           </div>
 
-          <div className="w-1/3 h-0.5 bg-[#BFA880] mx-auto my-7 md:my-14"></div>
+          <Divider />
 
           <div className="md:mt-14 px-4">
             <p className="text-[#C6D7CF] text-sm ">

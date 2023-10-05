@@ -1,6 +1,7 @@
 import { FaArrowCircleRight } from 'react-icons/fa';
 import { GiCakeSlice } from 'react-icons/gi';
 import { PrimaryButton, SecondaryButton } from '../components/Button';
+import { Divider } from '../components/Divider';
 export const Detail = () => {
   const handleOpenCalendarClick = () => { };
 
@@ -28,7 +29,8 @@ export const Detail = () => {
             {/* <SecondaryButton title="Agendar" onClick={handleOpenCalendarClick} /> */}
           </div>
 
-          <div className="m-auto w-40 h-0.5 lg:w-0.5 lg:h-60 bg-[#BFA880] my-8 lg:mx-20 opacity-50"></div>
+          <div className="hidden lg:visible m-auto w-40 h-0.5 lg:w-0.5 lg:h-60 bg-[#BFA880] my-8 lg:mx-20 opacity-50"></div>
+          <Divider className='lg:hidden' />
 
           <div className="lg:w-1/3">
             <p className="text-[#C6D7CF] text-2xl lg:text-3xl">Lugar</p>
@@ -41,7 +43,7 @@ export const Detail = () => {
           </div>
         </div>
 
-        <div className="m-auto w-40 h-0.5 lg:w-0.5 lg:h-60 bg-[#BFA880] my-8 lg:mx-20 opacity-50"></div>
+        <Divider className='lg:hidden' />
 
         <PrimaryButton
           title="Confirmar asistencia"
