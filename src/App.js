@@ -62,7 +62,8 @@ function App() {
         <Detail />
         <Notes />
       </Carousel>
-      <div className="absolute z-50 bottom-0 right-0 p-4">
+
+      <div className="absolute z-50 bottom-0 right-0 p-4 translate-x-12 lg:-translate-y-10 -rotate-90 opacity-70">
         <span className="text-xs text-[#BFA880]">
           Created by {' '}
           <a href="https://myke-dev.vercel.app/" target="_blank" rel="noreferrer" className="text-xs underline text-[#81938a]">
