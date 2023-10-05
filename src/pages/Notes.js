@@ -1,15 +1,55 @@
 import { GiLargeDress, GiBowTie } from 'react-icons/gi';
-import { FaMusic, FaGift, FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
+import { FaMusic, FaGift, FaQuoteLeft, FaQuoteRight, FaArrowCircleRight } from 'react-icons/fa';
 import { SecondaryButton } from '../components/Button';
+import { useState } from 'react';
+import { Modal } from '../components/Modal';
 
 export const Notes = () => {
+  const [dressModal, setDressModal] = useState(false);
+  const [musicModal, setMusicModal] = useState(false);
+
   return (
-    <div className="h-screen">
+    <div className="h-screen relative">
       <div className="w-full bg-[url('../public/images/lineas.svg')] bg-no-repeat bg-top bg-cover flex self-center items-center justify-center scale-x-[-1]">
         <div className="p-5 md:p-10 pt-8 md:pt-14 rounded-full shadow-lg w-20 h-20 md:w-40 md:h-40 bg-[#ffffff] flex items-center justify-center my-10 scale-x-[-1]">
           <FaGift size={70} color="#81948B" className="animate-bounce" />
         </div>
       </div>
+
+      <Modal isOpen={dressModal} onClose={() => setDressModal(false)} title="DRESS CODE">
+        <div className="flex justify-center">
+          <picture className="w-40 h-40 my-5">
+            <img src="./images/elegante-sport.jpeg" alt="elegate sport" className="rounded-sm" />
+          </picture>
+        </div>
+        <p className="text-[#81948B] text-sm">
+          Estás invitado a nuestra fiesta especial! Para darle un toque único y relajado, te pedimos que te vistas de
+          manera "ELEGANTE SPORT"
+        </p>
+      </Modal>
+
+      <Modal isOpen={musicModal} onClose={() => setMusicModal(false)} title="Agrega tu canción favorita">
+        <div className='lg:mt-10'>
+          <iframe
+            title="spotify playlist"
+            src="https://open.spotify.com/embed/playlist/3yhRHPNS5l3OGvlW4X2FBG?utm_source=generator"
+            width="100%"
+            height="152"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+        <p className="text-[#81948B] text-sm my-2">
+          Unite y agrega esa canción que no puede faltar en la PlayList de la fiesta...
+        </p>
+        <SecondaryButton
+          fullWidth
+          title="Agregar"
+          link="https://spotify.link/hTaxkBVGDDb"
+          iconRight={() => <FaArrowCircleRight />}
+        />
+      </Modal>
 
       <div className="lg:mt-10 lg:mb-16">
         <h2 className="[#BFA880] text-lg lg:text-2xl text-[#81948B]">Regalos</h2>
@@ -39,7 +79,7 @@ export const Notes = () => {
             </div>
           </div>
           <p className="text-[#81948B] text-sm">Cúal es la canción que no puede faltar en la PlayList de la fiesta?</p>
-          <SecondaryButton title="Sugerir canción" fullWidth />
+          <SecondaryButton onClick={() => setMusicModal(true)} title="Sugerir canción" fullWidth />
         </li>
 
         <li className="w-full sm:w-1/2 lg:w-1/3 text-center bg-[#ffffff] py-2 lg:py-10 px-4 rounded-md relative shadow-md">
@@ -51,7 +91,7 @@ export const Notes = () => {
             </div>
           </div>
           <p className="text-[#81948B] text-sm">Acá te dejamos algunas sugerencias de vestuario.</p>
-          <SecondaryButton title="Ver más" fullWidth />
+          <SecondaryButton onClick={() => setDressModal(true)} title="Ver más" fullWidth />
         </li>
       </ul>
     </div>
