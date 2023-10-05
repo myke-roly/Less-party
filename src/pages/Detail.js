@@ -29,7 +29,7 @@ export const Detail = () => {
             {/* <SecondaryButton title="Agendar" onClick={handleOpenCalendarClick} /> */}
           </div>
 
-          <div className="hidden lg:visible m-auto w-40 h-0.5 lg:w-0.5 lg:h-60 bg-[#BFA880] my-8 lg:mx-20 opacity-50"></div>
+          <div className="hidden lg:block m-auto w-40 h-0.5 lg:w-0.5 lg:h-60 bg-[#BFA880] my-8 lg:mx-20 opacity-50"></div>
           <Divider className='lg:hidden' />
 
           <div className="lg:w-1/3">
