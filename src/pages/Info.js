@@ -4,7 +4,7 @@ import { Divider } from '../components/Divider';
 
 export const Info = () => {
   return (
-    <div className="h-screen">
+    <div className="h-auto">
       <picture className="absolute bottom-0 -right-5 z-9 animate-pulse w-32 md:w-72 ">
         <img src="./images/hojas.svg" alt="hojas" />
       </picture>

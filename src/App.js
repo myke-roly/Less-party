@@ -41,15 +41,10 @@ function App() {
   };
 
   return (
-    <div>
-      <button onClick={togglePlay} className="absolute top-5 right-5 lg:right-10 p-4 z-10 bg-[#81938a9f] rounded-full">
-        <FaMusic className={isPlaying ? 'animate-spin' : ''} size={20} color="#ffffff" />
-      </button>
-      <YouTube className="hidden" videoId={videoId} opts={opts} onReady={onReady} />
+    <>
       <Carousel
         className="fullscreen-carousel bg-[#F9F7F2]"
         useKeyboardArrows
-        verticalSwipe="natural"
         showThumbs={false}
         showStatus={false}
         showArrows={true}
@@ -63,12 +58,18 @@ function App() {
         <Notes />
       </Carousel>
 
-      <div className="absolute z-50 bottom-0 right-0 p-4 translate-x-8 -translate-y-5 -rotate-90 opacity-70">
+      <button onClick={togglePlay} className="absolute top-5 right-5 lg:right-10 p-4 z-10 bg-[#81938a9f] rounded-full">
+        <FaMusic className={isPlaying ? 'animate-spin' : ''} size={20} color="#ffffff" />
+      </button>
+
+      <YouTube className="hidden" videoId={videoId} opts={opts} onReady={onReady} />
+
+      <div className="absolute z-50 bottom-0 right-0 m-4 translate-x-8 -translate-y-5 -rotate-90 opacity-70">
         <a href="https://myke-dev.vercel.app/" target="_blank" rel="noreferrer" className="text-xs text-[#BFA880]">
           By @Mike
         </a>
       </div>
-    </div>
+    </>
   );
 }
 
