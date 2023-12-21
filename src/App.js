@@ -54,7 +54,6 @@ function App() {
       >
         <Main />
         <Info />
-        <Detail />
         <Notes />
       </Carousel>
 
